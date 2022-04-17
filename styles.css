@@ -2,6 +2,11 @@ li{
     list-style-type: none;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
 body{
     height: 100vh;
     margin: 0;
@@ -31,6 +36,7 @@ body{
     padding-top: 20px;
     padding-left: 30px;
     padding-right: 40px;
+    padding-bottom: 10px;
 }
 
 
@@ -49,6 +55,8 @@ body{
     align-items: center;
     justify-content: space-evenly;
     padding: 40px;
+    background-color:aliceblue;
+    color: black;
 }
 .content-text li{
     margin-bottom: 20px;
@@ -60,4 +68,23 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color:aliceblue;
+    color: black;
+}
+
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.contact-text{
+    font-size: 40px;
+    
+}
+
+.resume{
+    background-color:aliceblue;
+    color: black;
 }

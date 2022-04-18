@@ -16,6 +16,7 @@ body{
     font-family:monospace ;
     display: flex;
     flex-direction: column;
+
 }
 
 .logo{
@@ -26,7 +27,7 @@ body{
 .mainimage{
     height: 400px;
     width: auto;
-    border: 5px solid white ;
+    border: 5px solid rgb(143, 143, 143) ;
 }
 
 .header{
@@ -37,6 +38,9 @@ body{
     padding-left: 30px;
     padding-right: 40px;
     padding-bottom: 10px;
+    font-size: 30px;
+    font-weight: 600;
+    
 }
 
 
@@ -53,29 +57,45 @@ body{
     flex: 1;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     padding: 40px;
     background-color:aliceblue;
     color: black;
+    padding-bottom: 70px;
+    padding-top: 70px;
+    gap:80px;
+    
+
 }
 .content-text li{
     margin-bottom: 20px;
     font-size: 20px;
-    
+    margin: 0;  
+    padding: 0; 
+    width: 350px;
+    margin-bottom: 20px;
 }
 
 .footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:aliceblue;
-    color: black;
+    
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
 }
 
 .contact{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    
+    background-color: aliceblue;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    
     
 }
 
@@ -88,3 +108,57 @@ body{
     background-color:aliceblue;
     color: black;
 }
+
+.skill-dev{
+    background-color: aliceblue;
+    color: black;
+    
+    text-align: center;
+    padding: 16px;
+    background-color:aliceblue;
+    border-radius: 8px;
+    width: 300px;
+    
+    height:600px ;
+    
+    
+}
+
+.skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 18px;
+    gap: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+     
+}
+
+
+#skills{
+    list-style-type: none;
+    padding : 0px;
+    margin-top: 20px;
+
+
+}
+
+#heading{
+    font-size: 25px;
+    text-align: center;
+    font-weight: 1000;
+}
+#skills>li{
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 550;
+}
+
+
+
+
+
+
+

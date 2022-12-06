@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Devansh Dhingra</title>
     <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
-    <div class="header">
+    <!--<div class="header">
         <a href="index.html"><img class="logo" src="images/DEVLOGO.png" alt="logo"></a>
         <ul class="head-items">
             <li><a href="https://github.com/mrdevdhingra?tab=repositories">Projects</a></li>
@@ -17,83 +18,136 @@
             
             <li><a href="graphics.html">Graphics</a></li>
         </ul>
-    </div>
+    </div>-->
+  
     
-        <div class="content">
-            <div>
-                <p style="font-size: 40PX; font-weight: 600;"> DEVANSH DHINGRA</p>
+    <div style="min-height: 100%;padding-top: 2vh;">
+        <nav ><a href="index.html"><img class="logo" src="images/DEVLOGO.png" alt="logo"></a></nav>
+        <div class="modal">
+            <form id="contact-form">
+                <p class="close" style="cursor:pointer;">&#10006;</p>
+                <input type="text" name="name" id="name" placeholder="Your name">
+                <input type="email" name="email" id="email" placeholder="Your email">
+                <input type="text" name="phone" id="phone" placeholder="Your phone number">
+                <input type="text" name="message" id="message" placeholder="message">
+                <button type="submit">Save</button>
+                
+              </form>
+              
+          </div>
+        <div class="content" id="section1">
+            <div style="width: 50%;padding-top:5%">
+                
+                
                 <ul class="content-text">
-                    <li>🎓 I'm a student at TCD!</li>
-                    <li>👨‍💻 I'm a full-stack developer!</li>
-                    <li>🚧 This website is under contruction!</li>
-                    <li>😎 Will be adding alot of crazy stuff in coming days!</li>
-                    <li>📜 Scroll down for more!</li>
+                    <li style="font-size: 50px; font-weight: 600;">DEVANSH DHINGRA</li>
+                    
+                    <li style="margin-top:5vh"><u>I'm a student at Trinity College Dublin.</u> </li>
+                    <li><u>I'm a full-stack developer.</u> </li>
+                
+                    <li><u>Scroll down to know more about me.</u></li>
+                    <div style="padding-left: 0vw; margin-top: 10vh;display: flex;gap:2vw">
+                        <div class="opModal"><button class="cntct-btn" type="submit" >Contact now.    &#8594;</button></div>
+                        <div class="opModal"><button class="cntct-btn" type="submit" >Know more.    &#8594;</button></div>
+                        
+            
+                    </div>
                 </ul>
             </div>
-            
-            <img class="mainimage" src="images/Homeimg.jpg" alt="mainimage">
-        </div>
-        
-        <div style="display:flex; align-items: center;justify-content: center; flex-direction: column; font-size: 40px;">
-            <p>Skills</p>  
-        </div>
-
-            <div class="skills">
-                <div class="skill-dev">
-                    <img src="images/web-programming.png" alt="developer" style="height: 100px; width: auto ; ">
-                    <p id="heading">Full-stack Developer</p>
-                    <p style="font-size: 15px;">I like to code ideas and make them reality!</p>
-                    <p style="font-size:  20px; font-weight: 700;"> Language aresenal:</p>
-                    <p style="font-size: 15px;">HTML,CSS,JavaScript,C,C++,Python,Dart</p>
-                    <p style="font-size:  20px; font-weight: 700;" >Dev Tools:</p>
-                    <ul id="skills">
-                        <li>Git/GitHub</li>
-                        <li>VSCode</li>
-                        <li>Terminal</li>
-                        <li>MongoDB</li>
-                        <li>SQL</li>
-                        <li>Firebase</li>
-                        <li>NodeJS</li>
-                    </ul>
-                </div>
-                <div class="skill-dev" >
-                    <img src="images/idea.png" alt="developer" style="height: 100px; width: auto;">
-                    <p id="heading">Designer</p>
-                    <p style="font-size: 15px;">Love to recreate those creative designs from my creative mind!!!!!</p>
-                    <p style="font-size:  20px; font-weight: 700;">Creative skills:</p>
-                    <p style="font-size: 15px;">Graphics,UX,UI,Logo,Apps</p>
-                    <p style="font-size:  20px;font-weight: 700;">Styling Tools:</p>
-                    <ul id="skills" >
-                        <li>Photoshop</li>
-                        <li>Illustrator</li>
-                        <li>Figma</li>
-                        <li>Canva</li>
-                    </ul>
-                </div>
-                <!-- <div class="skill-dev">
-                    <img src="images/web-programming.png" alt="developer" style="height: 100px; width: auto;">
-                    <p id="heading">Full-stack Developer</p>
-                    <p style="font-size: 15px;">I like to code ideas and make them reality!</p>
-                    <p style="font-size:  20px; font-weight: 700;">Language aresenal:</p>
-                    <p style="font-size: 15px;">HTML,CSS,JavaScript,C,C++,Python,Dart</p>
-                    <p style="font-size:  20px;font-weight: 700;">Dev Tools:</p>
-                    <ul id="skills">
-                        <li>Git/GitHub</li>
-                        <li>VSCode</li>
-                        <li>Terminal</li>
-                        <li>MongoDB</li>
-                        <li>SQL</li>
-                        <li>Firebase</li>
-                        <li>NodeJS</li>
-                    </ul>
-                </div>-->
+            <div style="width:50%">
+                <img class="mainimage" src="images/devimage1.png" alt="mainimage">
+                <!--<canvas id="container" width="200" height="200"></canvas>-->
             </div>
+            
+            
+            
+            
+            
+            
+                <a id="scrll" href="#skills"><span></span><span></span><span></span>Scroll</a>
+              
+        </div>
+        <!--<div class="belt" id="belt">
+            <div style="margin:0">
+                <h4 style="color:white;top: 0%; margin:0">&#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725  </h4>
+            </div>
+            <span  class="beltimage" id="beltimage"><img src="images/devimage1.png" style="height: 100px; width:auto" alt="img"></span>
+            <span  class="beltimage" id="beltimage"><img src="images/devimage1.png" style="height: 100px; width:auto" alt="img"></span>
+            <span  class="beltimage" id="beltimage"><img src="images/devimage1.png" style="height: 100px; width:auto" alt="img"></span>
+            <span  class="beltimage"  id="beltimage"><img src="images/devimage1.png" style="height: 100px; width:auto" alt="img"></span>
+            <span  class="beltimage" id="beltimage"><img src="images/devimage1.png" style="height: 100px; width:auto" alt="img"></span>
+            <span  class="beltimage" id="beltimage"><img src="images/devimage1.png" style="height: 100px; width:auto" alt="img"></span>
+            <div style="margin-top:11.5%; bottom: 0;">
+                <h4 style="color:white;margin-top: 50%; margin:0">&#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725  </h4>
+            </div>
+        </div>-->
         
         
-  
- 
-    
+       
+    </div>
+        
 
+        <div class="skillpage">
+            <div style="display:flex; align-items: center;justify-content: center; flex-direction: column; font-size: 40px; font-weight: 600;">
+                <p>SKILLS</p>  
+            </div>
+    
+                <div class="skills" id="skills">
+                    <div class="skill-dev">
+                        <img src="images/web-programming.png" alt="developer" style="height: 100px; width: auto ; ">
+                        <p id="heading">Full-stack Developer</p>
+                        <p style="font-size: 15px;">I like to code ideas and make them reality!</p>
+                        <p style="font-size:  20px; font-weight: 700;"> Language aresenal:</p>
+                        <p style="font-size: 15px;">HTML,CSS,JavaScript,C,C++,Python,Dart</p>
+                        <p style="font-size:  20px; font-weight: 700;" >Dev Tools:</p>
+                        <ul id="skills">
+                            <li>Git/GitHub</li>
+                         
+                            <li>Terminal</li>
+                            <li>MongoDB</li>
+                            <li>SQL</li>
+                            <li>Firebase</li>
+                            <li>NodeJS</li>
+                        </ul>
+                    </div>
+                    <div class="skill-dev" >
+                        <img src="images/idea.png" alt="developer" style="height: 100px; width: auto;">
+                        <p id="heading">Designer</p>
+                        <p style="font-size: 15px;">Love to recreate those creative designs from my creative mind!!!!!</p>
+                        <p style="font-size:  20px; font-weight: 700;">Creative skills:</p>
+                        <p style="font-size: 15px;">Graphics,UX,UI,Logo,Apps</p>
+                        <p style="font-size:  20px;font-weight: 700;">Styling Tools:</p>
+                        <ul id="skills" >
+                            <li>Photoshop</li>
+                            <li>Illustrator</li>
+                            <li>Figma</li>
+                            <li>Canva</li>
+                        </ul>
+                    </div>
+                    <!-- <div class="skill-dev">
+                        <img src="images/web-programming.png" alt="developer" style="height: 100px; width: auto;">
+                        <p id="heading">Full-stack Developer</p>
+                        <p style="font-size: 15px;">I like to code ideas and make them reality!</p>
+                        <p style="font-size:  20px; font-weight: 700;">Language aresenal:</p>
+                        <p style="font-size: 15px;">HTML,CSS,JavaScript,C,C++,Python,Dart</p>
+                        <p style="font-size:  20px;font-weight: 700;">Dev Tools:</p>
+                        <ul id="skills">
+                            <li>Git/GitHub</li>
+                            <li>VSCode</li>
+                            <li>Terminal</li>
+                            <li>MongoDB</li>
+                            <li>SQL</li>
+                            <li>Firebase</li>
+                            <li>NodeJS</li>
+                        </ul>
+                    </div>-->
+                </div>
+        </div>
+        
+        
+        
+        
+            <hr>
     <div id="contact" class="contact">
         <div class="contact-text">Get in touch!</div>
         <div class="contact-info">
@@ -105,9 +159,10 @@
     
     
     <div class="footer">
-        <p>Made by Devansh Dhingra ❤️</p>
+        <p style="background-color: black;">Made by Devansh Dhingra ❤️</p>
     </div>
+    <script type="module" src="firbase.js"></script>
+    <script src="script.js"></script>
     
-
 </body>
 </html>

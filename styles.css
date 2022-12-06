@@ -11,23 +11,40 @@ body{
     height: 100vh;
     margin: 0;
     
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: white;
     font-family:monospace ;
     display: flex;
     flex-direction: column;
 
 }
 
+nav{
+    
+        top: 0px;
+        left: 50%;
+        z-index: 5;
+        display:flex;
+        justify-content:center;
+        
+      }
+
+
+
 .logo{
     height: 50px;
     width: auto;
+    background-color: black;
+    
+    
 }
 
 .mainimage{
-    height: 400px;
+    height: 500px;
     width: auto;
-    border: 5px solid rgb(143, 143, 143) ;
+    
+    margin-left: 20%;
+
 }
 
 .header{
@@ -56,25 +73,103 @@ body{
 .content{
     flex: 1;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 40px;
-    background-color:aliceblue;
+    align-items: space-between;
+    justify-content: space-between;
+    
+    background-color:white;
     color: black;
     padding-bottom: 70px;
-    padding-top: 70px;
-    gap:80px;
+    padding-top: 10vh;
+    
+    padding-right: 5vw;
+    padding-left: 5vw;
     
 
 }
+
+.content-text{
+    border-left: solid black 5px;
+}
 .content-text li{
     margin-bottom: 20px;
-    font-size: 20px;
+    font-size: 30px;
+    font-weight: 600;
     margin: 0;  
     padding: 0; 
-    width: 350px;
+    /*width: 40vw;*/
     margin-bottom: 20px;
+    
 }
+
+.cntct-btn{
+  background-color: white;
+  height: 5vh;
+  width: 10vw;
+  border: 2px solid black;
+  font-size: 1em;
+  transition: 0.2s;
+  transition-timing-function: ease-out;
+  
+}
+
+.cntct-btn:hover{
+  background-color: black;
+  color: white;
+  transition: 0.2s;
+  transition-timing-function: ease-in;
+}
+
+.belt{
+  height: 27vh;
+  background-color: black;
+  opacity: 0;
+  top:12%;
+}
+
+.beltimage{
+  width: 23vw;
+  height: 22vh;
+  border: 1px solid black;
+  background-color: white;
+  transition: 0.2s;
+  transition-timing-function: ease-out;
+}
+
+.beltimage:hover{
+  background-color: red;
+  transition: 0.2s;
+  transition-timing-function: ease-in;
+}
+
+
+
+
+.belt span{
+  position:absolute;
+  
+  animation: move 35s linear infinite;
+}
+
+.belt span:nth-child(1) {
+  animation-delay: -35s;
+}
+
+.belt span:nth-child(2) {
+  animation-delay: -28s;
+}
+.belt span:nth-child(3) {
+  animation-delay: -21s;
+}
+.belt span:nth-child(4) {
+  animation-delay: -14s;
+}
+.belt span:nth-child(5) {
+  animation-delay: -7s;
+}
+.belt span:nth-child(6) {
+  animation-delay: 0s;
+}
+
 
 .footer{
     display: flex;
@@ -91,7 +186,7 @@ body{
     justify-content: space-evenly;
     align-items: center;
     
-    background-color: aliceblue;
+    background-color: white;
     color: black;
     font-weight: 600;
     font-size: 20px;
@@ -110,16 +205,17 @@ body{
 }
 
 .skill-dev{
-    background-color: aliceblue;
+    
     color: black;
     
     text-align: center;
     padding: 16px;
-    background-color:aliceblue;
+    background-color:white;
+    border:solid black 2px;
     border-radius: 8px;
     width: 300px;
     
-    height:600px ;
+    height:520px ;
     
     
 }
@@ -134,6 +230,10 @@ body{
     margin-top: 20px;
     margin-bottom: 20px;
      
+}
+
+.skillpage{
+    min-height: 80vh;
 }
 
 
@@ -156,9 +256,167 @@ body{
     font-weight: 550;
 }
 
+hr {
+    border: none;
+    border-top: 3px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+
+.bq{
+  position: absolute;
+  bottom:30px;
+  left: 10%;
+  opacity: 0;
+
+}
+
+#container {
+   
+    width: 300px;
+    height: 300px;
+    margin-left: 10vw;
+    
+    
+  }
+
+
+  .content a {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    z-index: 2;
+    display: inline-block;
+   
+    
+    color: rgb(0, 0, 0);
+    font : normal 400 20px/1 'Josefin Sans', sans-serif;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .3s;
+  }
+  .content a:hover {
+    opacity: .5;
+  }
+
+  #section1 a {
+    padding-top: 80px;
+  }
+  #section1 a span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(0, 0, 0);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb07 2s infinite;
+    animation: sdb07 2s infinite;
+    opacity: 0;
+    box-sizing: border-box;
+  }
+  #section1 a span:nth-of-type(1) {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+  }
+  #section1 a span:nth-of-type(2) {
+    top: 16px;
+    -webkit-animation-delay: .15s;
+    animation-delay: .15s;
+  }
+  #section1 a span:nth-of-type(3) {
+    top: 32px;
+    -webkit-animation-delay: .3s;
+    animation-delay: .3s;
+  }
+
+
+  .modal {
+    position: absolute;
+    left: 50%;
+    top: -100px;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1.5px solid black;
+    
+    filter: blur(2px);
+    
+  }
+  
+  h3 {
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    margin-bottom: 32px;
+  }
+  
+  p {
+    font-size: 13px;
+    text-align: center;
+    opacity: 0.9;
+    margin-bottom: 20px;
+  }
+  
+  
+  .active {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(0);
+    
+  }
 
 
 
 
 
 
+
+
+
+
+
+
+  @-webkit-keyframes sdb07 {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes sdb07 {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+
+  @keyframes move {
+    from {
+        left: -20%;
+    }
+
+    to {
+        left: 100%;
+    }
+  }

@@ -1,168 +1,510 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Devansh Dhingra</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./src/output.css" />
     
-</head>
-<body>
-    <!--<div class="header">
-        <a href="index.html"><img class="logo" src="images/DEVLOGO.png" alt="logo"></a>
-        <ul class="head-items">
-            <li><a href="https://github.com/mrdevdhingra?tab=repositories">Projects</a></li>
-            <li><a href="DevanshDhingra_CV  (10).pdf">Resume</a></li>
-            <li> <a href="#contact">Contact</a></li>
-            
-            <li><a href="graphics.html">Graphics</a></li>
-        </ul>
-    </div>-->
+  </head>
+  <body class="max-w-screen-xl mx-auto">
+    <!-- <nav
+      aria-label="Site Nav"
+      class="mx-auto flex max-w-screen-xl items-center justify-between p-4"
+    >
+      <a
+        href="index.html"
+        class="inline-flex h-10 w-20 items-center justify-center rounded-lg bg-black"
+      >
+        <span class="sr-only">Logo</span>
+        <img src="./images/DEVLOGO.png" alt="logo" class="w-full mx-auto sm:w-auto lg:w-auto">
+        
+      </a>
+
+      <ul class="flex items-center gap-2 text-sm font-medium text-gray-500 flex-wrap">
+        <li><a class="rounded-lg px-3 py-2" href="#projects"> Projects </a></li>
+        <li><a class="rounded-lg px-3 py-2" href="#skills"> Skills </a></li>
+        <li><a class="rounded-lg px-3 py-2" href="#about"> About </a></li>
+        <li><a class="rounded-lg px-3 py-2" href="#articles"> Articles </a></li>
+        <li><a class="rounded-lg px-3 py-2" href="#contactsection"> Contact </a></li>
+
+        <li>
+          <a
+            class="inline-flex items-center gap-2 rounded-lg px-3 py-2"
+            href="https://www.github.com/mrdevdhingra"
+            target="_blank"
+          >
+            Github
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              class="h-4 w-4"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+              ></path>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>  -->
+    <nav aria-label="Site Nav" class="mx-auto flex max-w-screen-xl items-center justify-between p-4">
+      <a href="index.html" class="inline-flex h-10 w-20 items-center justify-center rounded-lg bg-black">
+        <span class="sr-only">Logo</span>
+        <img src="./images/DEVLOGO.png" alt="logo" class="w-full mx-auto sm:w-auto lg:w-auto">
+      </a>
+      <div class="hidden md:flex md:items-center md:space-x-4">
+        <a class="rounded-lg px-3 py-2" href="#projects">Projects</a>
+        <a class="rounded-lg px-3 py-2" href="#skills">Skills</a>
+        <a class="rounded-lg px-3 py-2" href="#about">About</a>
+        <a class="rounded-lg px-3 py-2" href="#articles">Articles</a>
+        <a class="rounded-lg px-3 py-2" href="#contactsection">Contact</a>
+        <a class="inline-flex items-center gap-2 rounded-lg px-3 py-2" href="https://www.github.com/mrdevdhingra" target="_blank">
+          Github
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-4 w-4">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+          </svg>
+        </a>
+      </div>
+      <button id="menuButton" class="md:hidden text-gray-600">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-6 w-6">
+          <path fill-rule="evenodd" d="M2 5a1 1 0 011-1h14a1 1 0 110 2H3a1 1 0 01-1-1zm0 6a1 1 0 011-1h14a1 1 0 110 2H3a1 1 0 01-1-1zm1 5a1 1 0 100 2h14a1 1 0 100-2H3z" clip-rule="evenodd"/>
+        </svg>
+      </button>
+    </nav>
+    <div class="bg-gray-100 md:hidden hidden" id="mobileMenu">
+      <div class="px-4 py-2 space-y-2">
+        <a href="#projects" class="block text-gray-600">Projects</a>
+        <a href="#skills" class="block text-gray-600">Skills</a>
+        <a href="#about" class="block text-gray-600">About</a>
+        <a href="#articles" class="block text-gray-600">Articles</a>
+        <a href="#contactsection" class="block text-gray-600">Contact</a>
+        <a href="https://www.github.com/mrdevdhingra" class="block text-gray-600 inline-flex gap-2 rounded-lg " target="_blank">
+          GitHub
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-4 w-4">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+    
+
+    
   
     
-    <div style="min-height: 100%;padding-top: 2vh;">
-        <nav ><a href="index.html"><img class="logo" src="images/DEVLOGO.png" alt="logo"></a></nav>
-        <div class="modal">
-            <form id="contact-form">
-                <p class="close" style="cursor:pointer;">&#10006;</p>
-                <input type="text" name="name" id="name" placeholder="Your name">
-                <input type="email" name="email" id="email" placeholder="Your email">
-                <input type="text" name="phone" id="phone" placeholder="Your phone number">
-                <input type="text" name="message" id="message" placeholder="message">
-                <button type="submit">Save</button>
-                
-              </form>
-              
-          </div>
-        <div class="content" id="section1">
-            <div style="width: 50%;padding-top:5%">
-                
-                
-                <ul class="content-text">
-                    <li style="font-size: 50px; font-weight: 600;">DEVANSH DHINGRA</li>
-                    
-                    <li style="margin-top:5vh"><u>I'm a student at Trinity College Dublin.</u> </li>
-                    <li><u>I'm a full-stack developer.</u> </li>
-                
-                    <li><u>Scroll down to know more about me.</u></li>
-                    <div style="padding-left: 0vw; margin-top: 10vh;display: flex;gap:2vw">
-                        <div class="opModal"><button class="cntct-btn" type="submit" >Contact now.    &#8594;</button></div>
-                        <div class="opModal"><button class="cntct-btn" type="submit" >Know more.    &#8594;</button></div>
-                        
-            
-                    </div>
-                </ul>
-            </div>
-            <div style="width:50%">
-                <img class="mainimage" src="images/devimage1.png" alt="mainimage">
-                <!--<canvas id="container" width="200" height="200"></canvas>-->
-            </div>
-            
-            
-            
-            
-            
-            
-                <a id="scrll" href="#skills"><span></span><span></span><span></span>Scroll</a>
-              
+    <section
+      class=" mt-12 lg:mt-36 mx-auto max-w-screen-xl pb-12 px-4 items-center lg:flex md:px-8"
+    >
+    
+      <div class="space-y-4 flex-1 sm:text-center lg:text-left">
+        <h1 class="font-bold text-4xl xl:text-5xl leading-none mb-0 text-gray-500">Hi, I'm <span class="text-blue-500">Devansh</span>!</h1>
+        <p class="font-bold text-3xl xl:text-4xl leading-none mt-0 text-gray-500">
+          Mobile and Web Dev.
+        </p>
+        <p class="text-gray-700 max-w-xl leading-relaxed sm:mx-auto lg:ml-0">
+          Unleashing innovation through web and mobile mastery. Transform your ideas into impactful digital experiences.
+        </p>
+        <div
+          class="pt-1 items-center justify-center space-y-3 sm:space-x-6 sm:space-y-1 sm:flex lg:justify-start"
+        >
+          <a
+            href="#contactsection"
+            class="px-7 py-3  w-full bg-blue-500 text-white text-center rounded-md shadow-md block sm:w-auto"
+          >
+            Contact
+          </a>
+          <a
+            href="#about"
+            class="px-7 py-3 w-full bg-gray-700 text-gray-200 text-center rounded-md block sm:w-auto"
+          >
+            Know more.
+          </a>
         </div>
-        <!--<div class="belt" id="belt">
-            <div style="margin:0">
-                <h4 style="color:white;top: 0%; margin:0">&#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725  </h4>
-            </div>
-            <span  class="beltimage" id="beltimage"><img src="images/devimage1.png" style="height: 100px; width:auto" alt="img"></span>
-            <span  class="beltimage" id="beltimage"><img src="images/devimage1.png" style="height: 100px; width:auto" alt="img"></span>
-            <span  class="beltimage" id="beltimage"><img src="images/devimage1.png" style="height: 100px; width:auto" alt="img"></span>
-            <span  class="beltimage"  id="beltimage"><img src="images/devimage1.png" style="height: 100px; width:auto" alt="img"></span>
-            <span  class="beltimage" id="beltimage"><img src="images/devimage1.png" style="height: 100px; width:auto" alt="img"></span>
-            <span  class="beltimage" id="beltimage"><img src="images/devimage1.png" style="height: 100px; width:auto" alt="img"></span>
-            <div style="margin-top:11.5%; bottom: 0;">
-                <h4 style="color:white;margin-top: 50%; margin:0">&#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725 &#9725  </h4>
-            </div>
-        </div>-->
-        
-        
-       
-    </div>
-        
+      </div>
+      <div class="flex-1 items-center justify-center mt-7 lg:mt-0 lg:ml-3">
+        <img
+          src="./images/devimage1.png"
+          class="w-full mx-auto sm:w-10/12 lg:w-3/4"
+        />
+      </div>
+    </section>
+    
+    
 
-        <div class="skillpage">
-            <div style="display:flex; align-items: center;justify-content: center; flex-direction: column; font-size: 40px; font-weight: 600;">
-                <p>SKILLS</p>  
+    <div class="container mx-auto mt-12 lg:mt-36" id="projects">
+      <div class="lg:text-center">
+        <h2 class="text-3xl font-bold text-gray-500 mb-4">Projects</h2>
+      </div>
+      <div class=" grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Project Card 1 -->
+        <article
+          class="max-w-md mx-auto mt-4 shadow-lg border rounded-md duration-300 hover:shadow-sm"
+        >
+          <a href="">
+            <img
+              src="./images/modernui.png"
+              loading="lazy"
+              alt="Modern UI App"
+              class="w-full h-56 rounded-t-md"
+            />
+            <div class="pt-3 ml-4 mr-2 mb-3">
+              <h3 class="text-xl text-gray-900">Social Media App</h3>
+              <p class="text-gray-400 text-sm mt-1">
+                Flutter application with Firebase, containing authentication, chat system, freind list and much more features. 
+              </p>
             </div>
-    
-                <div class="skills" id="skills">
-                    <div class="skill-dev">
-                        <img src="images/web-programming.png" alt="developer" style="height: 100px; width: auto ; ">
-                        <p id="heading">Full-stack Developer</p>
-                        <p style="font-size: 15px;">I like to code ideas and make them reality!</p>
-                        <p style="font-size:  20px; font-weight: 700;"> Language aresenal:</p>
-                        <p style="font-size: 15px;">HTML,CSS,JavaScript,C,C++,Python,Dart</p>
-                        <p style="font-size:  20px; font-weight: 700;" >Dev Tools:</p>
-                        <ul id="skills">
-                            <li>Git/GitHub</li>
-                         
-                            <li>Terminal</li>
-                            <li>MongoDB</li>
-                            <li>SQL</li>
-                            <li>Firebase</li>
-                            <li>NodeJS</li>
-                        </ul>
+            <div class="flex justify-end mb-3 mr-2">
+              <a
+                href="https://github.com/mrdevdhingra/modern-login-flutter"
+                target="_blank"
+                class="mr-2 px-3 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors duration-300"
+                >Github</a>
+              
+            </div>
+          </a>
+        </article>
+
+        <!-- Project Card 2 -->
+        <article
+          class="max-w-md mx-auto mt-4 shadow-lg border rounded-md duration-300 hover:shadow-sm"
+        >
+          <a href="">
+            <img
+              src="./images/foodapp.gif"
+              loading="lazy"
+              alt="Project 2"
+              class="w-full h-56 rounded-t-md"
+            />
+            <div class="pt-3 ml-4 mr-2 mb-3">
+              <h3 class="text-xl text-gray-900">Food App</h3>
+              <p class="text-gray-400 text-sm mt-1">
+                Confused about what to eat? This app suggests you two cuisines with five dishes in each. App reloads once in 24 hours. Used Flutter, RESTApi and Node.js.
+              </p>
+            </div>
+            <div class="flex justify-end mb-3 mr-2">
+              <a
+                href="https://www.github.com/mrdevdhingra"
+                target="_blank"
+                class="mr-2 px-3 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors duration-300"
+                >Github</a>
+              
+            </div>
+          </a>
+        </article>
+        <!-- Project Card 3 -->
+        
+      </div>
+    </div>
+
+    <!--
+  This component uses @tailwindcss/forms
+
+  yarn add @tailwindcss/forms
+  npm install @tailwindcss/forms
+
+  plugins: [require('@tailwindcss/forms')]
+-->
+    <div class="container mx-auto mt-12 lg:mt-36" id="skills">
+      <div class="mt-12 grid gap-2 sm:grid-cols-2 lg:grid-cols-2">
+        <!-- Project Cards... -->
+      </div>
+
+      <!-- Skills Section -->
+      <div class="mt-12 lg:text-center sm:text-left mx-auto sm:mx-0">
+        <h2 class="text-3xl font-bold text-gray-500 mb-4">Skills</h2>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4"
+        >
+          <!-- Frontend Development Section -->
+          <div class="p-4 rounded-md">
+            <h3 class="text-lg font-bold mb-2 text-blue-500">Frontend Development</h3>
+            <ul class="text-lg">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Vue</li>
+              <li>Tailwind CSS</li>
+            </ul>
+          </div>
+
+          <!-- Backend Development Section -->
+          <div class="p-4 rounded-md">
+            <h3 class="text-lg font-bold mb-2 text-blue-500">Backend Development</h3>
+            <ul class="text-lg">
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>REST API</li>
+            </ul>
+          </div>
+
+          <!-- Database Management Section -->
+          <div class="p-4 rounded-md">
+            <h3 class="text-lg font-bold mb-2 text-blue-500">Database Management</h3>
+            <ul class="text-lg">
+              <li>Firebase</li>
+              <li>MongoDB</li>
+              <li>MySQL</li>
+            </ul>
+          </div>
+
+          <!-- Mobile App Development Section -->
+          <div class="p-4 rounded-md">
+            <h3 class="text-lg font-bold mb-2 text-blue-500">Mobile Development</h3>
+            <ul class="text-lg">
+              <li>Flutter</li>
+              <li>Dart</li>
+            </ul>
+          </div>
+
+          <!-- Version Control and Collaboration Section -->
+          <div class="p-4 rounded-md">
+            <h3 class="text-lg font-bold mb-2 text-blue-500">
+              VCS and Collaboration
+            </h3>
+            <ul class="text-lg">
+              <li>Git</li>
+              <li>GitHub</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      /* Media query to remove mx-auto on screens larger than 640px */
+      @media (min-width: 640px) {
+        .text-center.sm\:text-left.mx-auto.sm\:mx-0 {
+          margin-left: 0;
+          margin-right: 0;
+          text-align: left;
+        }
+      }
+    </style>
+
+    <section class="py-20 mt:12 lg:mt-36" >
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8" id="about">
+        <div class="lg:text-center">
+          <h2 class="text-3xl font-bold text-gray-500 mb-4">About Me</h2>
+          <p class="text-base text-gray-700 leading-relaxed">
+            Hi there! I'm <span class="font-bold">Devansh Dhingra</span>, a
+            <span class="font-bold">full-stack web and mobile developer</span>
+            with a passion for crafting high-quality software that solves
+            real-world problems.
+          </p>
+        </div>
+        <div class="mt-10">
+          <div class="md:flex">
+            
+            <div class="mt-4 md:mt-0 md:ml-6">
+              <h2 class="text-lg font-bold text-gray-900 mb-4">
+                Specializing in Creating Engaging Digital Experiences
+              </h2>
+              <p class="text-base text-gray-700 leading-relaxed">
+                I specialize in building
+                <span class="font-bold">responsive</span> and
+                <span class="font-bold">user-friendly interfaces</span> using
+                modern front-end tools such as
+                <span class="font-bold">React</span>,
+                <span class="font-bold">Vue</span>, and
+                <span class="font-bold">Tailwind CSS</span>. Whether you need a
+                custom website, a web application, or an e-commerce platform,
+                I'm here to help you create an
+                <span class="font-bold">engaging digital experience</span> for
+                your users.
+              </p>
+              <p class="text-base text-gray-700 leading-relaxed mt-4">
+                On the back-end, I use <span class="font-bold">Firebase, </span> 
+                <span class="font-bold">Node.js</span> and
+                <span class="font-bold">Express</span> to create powerful and
+                scalable <span class="font-bold">RESTful APIs</span> that
+                interact with databases like
+                <span class="font-bold">MongoDB</span> and
+                <span class="font-bold">MySQL</span>. My expertise in back-end
+                development allows me to build
+                <span class="font-bold"
+                  >robust and reliable server-side components</span
+                >
+                that power your applications.
+              </p>
+              <p class="text-base text-gray-700 leading-relaxed mt-4">
+                In mobile app development, I am skilled in using
+                <span class="font-bold">Flutter</span> and
+                <span class="font-bold">Dart programming language</span> to
+                build
+                <span class="font-bold"
+                  >beautiful and performant cross-platform apps</span
+                >. With my experience in mobile development, I can help you
+                create mobile apps that deliver a
+                <span class="font-bold">seamless user experience</span> across
+                all devices and platforms.
+              </p>
+              <p class="text-base text-gray-700 leading-relaxed mt-4">
+                But it's not just my technical skills that set me apart - my
+                <span class="font-bold">strong soft skills</span> make me an
+                excellent communicator, team player, and problem solver. I am
+                committed to
+                <span class="font-bold">understanding your needs</span> and
+                delivering software that exceeds your expectations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container mx-auto px-4 mt-12 lg:mt-36" id="articles">
+      <h2 class="text-3xl font-bold text-gray-500 mb-4 text-center" >My Articles</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+        <!-- Article 1 -->
+        <a href="https://medium.com/@devdhingra0902/create-a-secure-password-generator-with-react-and-css-6e5c8f86f42d" target="_blank"  class="bg-white rounded-md shadow-md p-4 hover:bg-blue-100">
+          <img src="./images/pwgenerator.gif" alt="Thumbnail for Article 1" class="w-full h-48 object-cover mb-4 rounded-md">
+          <h3 class="text-xl font-semibold mb-2">Password Generator</h3>
+          <p class="text-gray-500">Create a Secure Password Generator with React and CSS : Step-by-step guide.</p>
+        </a>
+        <!-- Article 2 -->
+        <a href="https://medium.com/@devdhingra0902/master-git-and-github-from-scratch-a-comprehensive-guide-for-absolute-beginners-112fa036a567" target="_blank"  class="bg-white rounded-md shadow-md p-4 hover:bg-blue-100">
+          <img src="./images/gitimg.webp" alt="Thumbnail for Article 2" class="w-full h-48 object-cover mb-4 rounded-md">
+          <h3 class="text-xl font-semibold mb-2">Intro to Git/Github</h3>
+          <p class="text-gray-500">Master Git and GitHub from Scratch: A Comprehensive Guide for Absolute Beginners.</p>
+        </a>
+        <!-- Add more articles here -->
+        <a href="https://medium.com/@devdhingra0902/how-to-create-a-data-table-in-reactjs-a-step-by-step-guide-abef8144cf88" target="_blank"  class="bg-white rounded-md shadow-md p-4 hover:bg-blue-100">
+          <img src="./images/datatable.webp" alt="Thumbnail for Article 2" class="w-full h-48 object-cover mb-4 rounded-md">
+          <h3 class="text-xl font-semibold mb-2">Data Table</h3>
+          <p class="text-gray-500">How to Create a Data Table in ReactJs: A Step-by-Step Guide.</p>
+        </a>
+      </div>
+    </div>
+
+    <main class="py-14 mt-12 lg:mt-36" id="contactsection">
+        <div class="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
+          
+          <div class="max-w-lg mx-auto gap-12 justify-between lg:flex lg:max-w-none">
+            <div class="max-w-lg space-y-3 ">
+              <p class="text-gray-800 text-3xl font-semibold sm:text-4xl">
+                Why don't we just talk?
+              </p>
+              <p>
+                Please just fill out this very small form, to fill in the communition gap. I will respond you as soon as I get your message!
+              <div>
+                <ul class="mt-6 flex flex-wrap gap-x-10 gap-y-6 items-center">
+                  <li class="flex items-center gap-x-3">
+                    <div class="flex-none text-gray-400">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M18 6V5a2 2 0 00-2-2H4a2 2 0 00-2 2v1L10 11l8-5zm0 2l-8 5-8-5v7a2 2 0 002 2h12a2 2 0 002-2V8z" />
+                      </svg>
                     </div>
-                    <div class="skill-dev" >
-                        <img src="images/idea.png" alt="developer" style="height: 100px; width: auto;">
-                        <p id="heading">Designer</p>
-                        <p style="font-size: 15px;">Love to recreate those creative designs from my creative mind!!!!!</p>
-                        <p style="font-size:  20px; font-weight: 700;">Creative skills:</p>
-                        <p style="font-size: 15px;">Graphics,UX,UI,Logo,Apps</p>
-                        <p style="font-size:  20px;font-weight: 700;">Styling Tools:</p>
-                        <ul id="skills" >
-                            <li>Photoshop</li>
-                            <li>Illustrator</li>
-                            <li>Figma</li>
-                            <li>Canva</li>
-                        </ul>
+                    <p>mrdevdhingra@gmail.com</p>
+                  </li>
+                  
+                  <li class="flex items-center gap-x-3">
+                    <div class="flex-none text-gray-400">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 2a6 6 0 00-6 6c0 3.364 3.824 8.044 5.363 9.897a.4.4 0 00.637 0C12.176 16.044 16 11.364 16 8a6 6 0 00-6-6zm0 9a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
+                      </svg>
                     </div>
-                    <!-- <div class="skill-dev">
-                        <img src="images/web-programming.png" alt="developer" style="height: 100px; width: auto;">
-                        <p id="heading">Full-stack Developer</p>
-                        <p style="font-size: 15px;">I like to code ideas and make them reality!</p>
-                        <p style="font-size:  20px; font-weight: 700;">Language aresenal:</p>
-                        <p style="font-size: 15px;">HTML,CSS,JavaScript,C,C++,Python,Dart</p>
-                        <p style="font-size:  20px;font-weight: 700;">Dev Tools:</p>
-                        <ul id="skills">
-                            <li>Git/GitHub</li>
-                            <li>VSCode</li>
-                            <li>Terminal</li>
-                            <li>MongoDB</li>
-                            <li>SQL</li>
-                            <li>Firebase</li>
-                            <li>NodeJS</li>
-                        </ul>
-                    </div>-->
+                    <p>Dublin City, Dublin, Ireland</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div  class="flex-1 mt-12 sm:max-w-lg lg:max-w-md">
+              <form id="contact-form" class="space-y-5" action="https://formspree.io/f/xoqzpjvg" method="POST">
+                <div>
+                  <label class="font-medium">
+                    Full name
+                  </label>
+                  <input type="text" name="fullName" required class="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg">
                 </div>
+                <div>
+                  <label class="font-medium">
+                    Email
+                  </label>
+                  <input type="email" name="email" required class="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg">
+                </div>
+                <div>
+                  <label class="font-medium">
+                    Company
+                  </label>
+                  <input type="text" name="company" required class="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg">
+                </div>
+                <div>
+                  <label class="font-medium">
+                    Message
+                  </label>
+                  <textarea name="message" required class="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"></textarea>
+                </div>
+                
+                <button type="submit" class="w-full px-4 py-2 text-white font-medium bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-600 rounded-lg duration-150">
+                  Submit
+                </button>
+              </form>
+              <div id="success-message" class="hidden">
+                <svg class="w-16 h-16 text-green-500 mx-auto my-4" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <p class="text-green-500 text-center">Your message has been sent successfully.</p>
+              </div>
+            </div>
+          </div>
         </div>
-        
-        
-        
-        
-            <hr>
-    <div id="contact" class="contact">
-        <div class="contact-text">Get in touch!</div>
-        <div class="contact-info">
-            <p>Email : mrdevdhingra@gmail.com</p>
-            <p>Contact : +353-894952383</p>
-            <p>Address : Dublin, Ireland</p>
+      </main>
+
+      <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-wrap justify-center items-center">
+            <div class="text-center">
+              <p class="mb-2">Designed and Developed by Devansh Dhingra.(Me)</p>
+              <p>&copy; 2023 Devansh Dhingra. All rights reserved.</p>
+            </div>
+          </div>
         </div>
-    </div>
+      </footer>
+      
+    <script>
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
     
+        const form = event.target;
+        const successMessage = document.getElementById('success-message');
     
-    <div class="footer">
-        <p style="background-color: black;">Made by Devansh Dhingra ❤️</p>
-    </div>
+        fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: {
+            'Accept': 'application/json'
+          }
+        }).then(response => {
+          if (response.ok) {
+            form.style.display = 'none';
+            successMessage.style.display = 'block';
+          } else {
+            // Show an error message or handle the error as needed
+            console.log(error)
+          }
+        }).catch(error => {
+          // Show an error message or handle the error as needed
+          console.log(error)
+        });
+      });
+
+      const menuButton = document.getElementById('menuButton');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    menuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+    </script>
+    
     <script type="module" src="firbase.js"></script>
     <script src="script.js"></script>
-    
-</body>
+  </body>
 </html>
